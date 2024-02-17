@@ -5,3 +5,10 @@ DirectoryIndex index.php
 <IfModule !authz_core_module>
     Allow from all
 </IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /codeigniter4-basics/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
