@@ -1,0 +1,46 @@
+ERROR - 2024-02-26 15:06:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(50) UNSIGNED NOT NULL,
+	`Country` VARCHAR(50) NOT NULL,
+	`Temperature` INT(1...' at line 2 in C:\xampp\htdocs\codeigniter4-basics\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-basics\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `w...', 0)
+#1 C:\xampp\htdocs\codeigniter4-basics\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `w...')
+#2 C:\xampp\htdocs\codeigniter4-basics\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `w...')
+#3 C:\xampp\htdocs\codeigniter4-basics\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `w...')
+#4 C:\xampp\htdocs\codeigniter4-basics\app\Database\Migrations\2024-02-26-143628_AddClass.php(54): CodeIgniter\Database\Forge->createTable('weather_project')
+#5 C:\xampp\htdocs\codeigniter4-basics\system\Database\MigrationRunner.php(865): App\Database\Migrations\AddClass->up()
+#6 C:\xampp\htdocs\codeigniter4-basics\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\codeigniter4-basics\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\codeigniter4-basics\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\codeigniter4-basics\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\codeigniter4-basics\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-02-26 15:08:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`Country` VARCHAR(50) NOT NULL,
+	`Temperature` INT(11) NO...' at line 2 in C:\xampp\htdocs\codeigniter4-basics\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-basics\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `w...', 0)
+#1 C:\xampp\htdocs\codeigniter4-basics\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `w...')
+#2 C:\xampp\htdocs\codeigniter4-basics\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `w...')
+#3 C:\xampp\htdocs\codeigniter4-basics\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `w...')
+#4 C:\xampp\htdocs\codeigniter4-basics\app\Database\Migrations\2024-02-26-143628_AddClass.php(53): CodeIgniter\Database\Forge->createTable('weather_project')
+#5 C:\xampp\htdocs\codeigniter4-basics\system\Database\MigrationRunner.php(865): App\Database\Migrations\AddClass->up()
+#6 C:\xampp\htdocs\codeigniter4-basics\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\codeigniter4-basics\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\codeigniter4-basics\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\codeigniter4-basics\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\codeigniter4-basics\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-02-26 15:10:33 --> mysqli_sql_exception: Table 'weather_project' already exists in C:\xampp\htdocs\codeigniter4-basics\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-basics\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `w...', 0)
+#1 C:\xampp\htdocs\codeigniter4-basics\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `w...')
+#2 C:\xampp\htdocs\codeigniter4-basics\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `w...')
+#3 C:\xampp\htdocs\codeigniter4-basics\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `w...')
+#4 C:\xampp\htdocs\codeigniter4-basics\app\Database\Migrations\2024-02-26-143628_AddClass.php(52): CodeIgniter\Database\Forge->createTable('weather_project')
+#5 C:\xampp\htdocs\codeigniter4-basics\system\Database\MigrationRunner.php(865): App\Database\Migrations\AddClass->up()
+#6 C:\xampp\htdocs\codeigniter4-basics\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\codeigniter4-basics\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\codeigniter4-basics\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\codeigniter4-basics\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\codeigniter4-basics\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
