@@ -18,7 +18,7 @@ class WeatherApi extends BaseController
         $model = new ClassModel();
         return $this->getResponse(
             [
-                'message' => 'Classes retrieved successfully',
+                'message' => 'Weather retrieved successfully',
                 'weather_project' => $model->findAll()
             ]
         );
