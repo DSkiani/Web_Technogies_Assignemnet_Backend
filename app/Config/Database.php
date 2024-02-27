@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'root',
-        'password'     => '',
+        'password'     => 'Password.123',
         'database'     => 'weather_conditions',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
