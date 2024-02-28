@@ -29,25 +29,5 @@ class Home extends BaseController
        /**
     * Get a single class by CODE
     */
-   public function show($City)
-   {
-       try {
-           $model = new WeatherModel();
-           $weather = $model->findWeatherByCity($City)->findAll();
-           return $this->getResponse(
-               [
-                   'message' => 'Weather retrieved successfully',
-                   'weather_project' => $weather
-               ]
-           );
-       } catch (Exception $e) {
-           return $this->getResponse(
-               [
-                   'message' => 'Could not find weather for specified city',
-                   'error' => $e->getMessage()
-               ],
-               ResponseInterface::HTTP_NOT_FOUND
-           );
-       }
-   }
+
 }
