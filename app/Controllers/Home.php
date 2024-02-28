@@ -29,5 +29,23 @@ class Home extends BaseController
        /**
     * Get a single class by CODE
     */
+    public function findByCity(string $City)
+    {
+        try {
+            // Instantiate the WeatherModel
+            $this->model = new WeatherModel();
+    
+            // Call the findWeatherByCity method from the model
+            $weatherRecord = $this->model->findWeatherByCity($City);
+    
+            // Return the weather record
+            return $weatherRecord;
+        } catch (Exception $e) {
+            // Handle any exceptions (e.g., weather not found for specified city)
+            return $this->getResponse([
+                'error' => $e->getMessage()
+            ]);
+        }
+    }
 
 }

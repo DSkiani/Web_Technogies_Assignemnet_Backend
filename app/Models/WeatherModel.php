@@ -19,6 +19,7 @@ class WeatherModel extends Model
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
+    
     public function findWeatherByCity(string $City)
     {
         $weather = $this

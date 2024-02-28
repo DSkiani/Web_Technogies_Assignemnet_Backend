@@ -7,5 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+$routes->get('home/findByCity/(:any)', 'Home::findByCity/$1');
+
 
 
