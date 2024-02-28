@@ -48,4 +48,11 @@ class Home extends BaseController
         }
     }
 
+    public function __construct()
+            {
+        header('Access-Control-Allow-Origin: *');
+        header("Content-Type: application/json; charset=UTF-8");
+        Header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE'); //method allowed
+            }
+
 }
