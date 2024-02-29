@@ -39,12 +39,15 @@ class Home extends BaseController
             $weatherRecord = $this->model->findWeatherByCity($City);
     
             // Return the weather record
-            return $weatherRecord;
+            return $this->getResponse([
+                'message' => 'Weather retrieved successfully',
+                'weather' => $weatherRecord
+            ]);
         } catch (Exception $e) {
             // Handle any exceptions (e.g., weather not found for specified city)
             return $this->getResponse([
                 'error' => $e->getMessage()
-            ]);
+            ], ResponseInterface::HTTP_NOT_FOUND); // Return 404 status code for not found
         }
     }
 
